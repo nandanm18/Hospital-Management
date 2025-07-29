@@ -1,0 +1,136 @@
+.patient-dashboard-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f7f8;
+  color: #2c3e50;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #006699;
+  padding: 15px 30px;
+  color: white;
+  position: relative;
+}
+
+.hospital-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.3));
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background: white;
+  color: #2c3e50;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  width: 220px;
+  text-align: left;
+  z-index: 10;
+}
+
+.profile-dropdown p {
+  margin: 5px 0;
+}
+
+.profile-dropdown button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: #006699;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-dropdown button:hover {
+  background-color: #004d80;
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 70px); /* header height */
+}
+
+.dashboard-sidebar {
+  width: 220px;
+  background: white;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  gap: 15px;
+}
+
+.dashboard-sidebar button {
+  padding: 10px 15px;
+  font-size: 14px; /* Smaller font size */
+  font-weight: 600;
+  color: #006699;
+  background: none;
+  border: 2px solid #006699;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-sidebar button:hover {
+  background-color: #006699;
+  color: white;
+}
+
+.dashboard-main-content {
+  flex: 1;
+  background: #f0f4f8;
+  padding: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #34495e;
+  border-radius: 10px;
+  box-shadow: inset 0 0 15px #ccc;
+}
+
+.dashboard-main-content h2 {
+  margin-bottom: 20px;
+  color: #004d80;
+}
+
+.announcements-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.announcements-list li {
+  background-color: #e6f0fa;
+  border-left: 5px solid #006699;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #003459;
+}

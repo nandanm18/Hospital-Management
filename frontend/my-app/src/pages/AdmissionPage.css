@@ -1,0 +1,71 @@
+.admission-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admission-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.patient-details {
+  margin-bottom: 2rem;
+}
+
+.patient-details p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.status {
+  font-weight: bold;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  background-color: #eaf0f6;
+  color: #2c3e50;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.admit-btn,
+.discharge-btn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.admit-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.admit-btn:hover {
+  background-color: #27ae60;
+}
+
+.discharge-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.discharge-btn:hover {
+  background-color: #c0392b;
+}

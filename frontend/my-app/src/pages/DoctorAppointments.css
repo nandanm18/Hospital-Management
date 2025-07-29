@@ -1,0 +1,91 @@
+.appointments-page {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  padding: 0 16px;
+}
+
+.appointments-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.loading,
+.error,
+.no-appointments {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  color: #555;
+}
+
+.appointment-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.table-header,
+.table-row {
+  display: flex;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.table-header {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.table-row:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 0 8px;
+  word-break: break-word;
+}
+
+.table-cell:last-child {
+  flex: 0 0 100px; /* action button column fixed width */
+  text-align: center;
+}
+
+.view-button {
+  background-color: #2d72d9;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.view-button:hover {
+  background-color: #1a4bb8;
+}
+
+@media (max-width: 600px) {
+  .table-header,
+  .table-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-cell {
+    padding: 6px 0;
+    flex: none;
+    width: 100%;
+  }
+
+  .table-cell:last-child {
+    width: 100%;
+    text-align: left;
+  }
+}
